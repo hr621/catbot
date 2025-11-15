@@ -80,7 +80,7 @@ client.once('ready', async () => {
         } catch (err) {
           console.warn(`⚠️ Couldn't refresh members for ${guild.name}: ${err.message}`);
         }
-      }, 30 *  1000);
+      }, 30 *  10000);
     } catch (err) {
       console.warn(`⚠️ Couldn't fetch members for ${guild.name}: ${err.message}`);
     }
@@ -214,6 +214,7 @@ if (message.channel.type === 1 || message.channel.isDMBased()) {
 
 // 🔹 تشغيل البوت
 client.login(TOKEN);
+
 
 
 
