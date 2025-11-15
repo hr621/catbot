@@ -59,7 +59,7 @@ const client = new Client({
   partials: [Partials.Message, Partials.Channel, Partials.GuildMember]
 });
 
-const TOKEN = "MTQzNTc5NjUzOTg3NTI2NjY3MA.G4wXN-.1tpoGG4Y_Q7GsibPN8CKVvPlxy9qng5XPNwy9Y";
+const TOKEN = process.env.TOKEN;
 const cachedInvites = new Map();
 
 // 🔹 عند تشغيل البوت
@@ -214,6 +214,7 @@ if (message.channel.type === 1 || message.channel.isDMBased()) {
 
 // 🔹 تشغيل البوت
 client.login(TOKEN);
+
 
 
 
